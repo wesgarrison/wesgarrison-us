@@ -1,0 +1,42 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Wes Garrison",
+    "description": "",
+    "home_page_url": "https://wesgarrison.github.io/wesgarrison-us",
+    "feed_url": "https://wesgarrison.github.io/wesgarrison-us/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Wes"
+    },
+    "items": [
+        {
+            "id": "https://wesgarrison.github.io/wesgarrison-us/now/",
+            "url": "https://wesgarrison.github.io/wesgarrison-us/now/",
+            "title": "Now",
+            "summary": "As of December 2022, I am:",
+            "content_html": "<p>As of December 2022, I am:</p>\n<p> </p>",
+            "author": {
+                "name": "Wes"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-12-22T13:44:55-06:00",
+            "date_modified": "2022-12-22T13:44:55-06:00"
+        },
+        {
+            "id": "https://wesgarrison.github.io/wesgarrison-us/turn-bluetooth-on-and-off-from-command-line-on-macos/",
+            "url": "https://wesgarrison.github.io/wesgarrison-us/turn-bluetooth-on-and-off-from-command-line-on-macos/",
+            "title": "Turn Bluetooth On and Off from Command Line on macOS",
+            "summary": "Sometimes I take my laptop away from my desk, but the connection to my bluetooth mouse is still strong enough&hellip;",
+            "content_html": "<p>Sometimes I take my laptop away from my desk, but the connection to my bluetooth mouse is still strong enough to stay connected. It will be just strong enough to prevent the trackpad from enabling, so I can't mouse up to the menu to turn off Bluetooth.</p>\n<p>Same problem in reverse when I get back to the desk and dock; the mouse won't connect because I disabled Bluetooth.</p>\n<p>Goal: a command-line way to enable or disable bluetooth.</p>\n<p>I found <code>blueutil</code>, here is how to use it.</p>\n<h3>Installation</h3>\n<p><code>brew install blueutil</code></p>\n<h3>Use</h3>\n<p>There is a command line flag <code>-p</code> for turning Bluetooth on/off with a <code>1 || 0</code>.</p>\n<p><code># Turn bluetooth off by passing a 0</code><br><code>blueutil -p 0</code><br><br><code># Turn bluetooth on by passing a 1</code><br><code>blueutil -p 1</code></p>\n<p> </p>\n<p> </p>",
+            "author": {
+                "name": "Wes"
+            },
+            "tags": [
+                   "TIL"
+            ],
+            "date_published": "2022-12-22T13:26:04-06:00",
+            "date_modified": "2022-12-22T13:26:04-06:00"
+        }
+    ]
+}

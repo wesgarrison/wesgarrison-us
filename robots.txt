@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://wesgarrison.github.io/wesgarrison-us/sitemap.xml

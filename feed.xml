@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Wes Garrison</title>
+    <link href="https://wesgarrison.github.io/wesgarrison-us/feed.xml" rel="self" />
+    <link href="https://wesgarrison.github.io/wesgarrison-us" />
+    <updated>2022-12-22T13:44:55-06:00</updated>
+    <author>
+        <name>Wes</name>
+    </author>
+    <id>https://wesgarrison.github.io/wesgarrison-us</id>
+
+    <entry>
+        <title>Now</title>
+        <author>
+            <name>Wes</name>
+        </author>
+        <link href="https://wesgarrison.github.io/wesgarrison-us/now/"/>
+        <id>https://wesgarrison.github.io/wesgarrison-us/now/</id>
+
+        <updated>2022-12-22T13:44:55-06:00</updated>
+            <summary>
+                <![CDATA[
+                    As of December 2022, I am:
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>As of December 2022, I am:</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Turn Bluetooth On and Off from Command Line on macOS</title>
+        <author>
+            <name>Wes</name>
+        </author>
+        <link href="https://wesgarrison.github.io/wesgarrison-us/turn-bluetooth-on-and-off-from-command-line-on-macos/"/>
+        <id>https://wesgarrison.github.io/wesgarrison-us/turn-bluetooth-on-and-off-from-command-line-on-macos/</id>
+            <category term="TIL"/>
+
+        <updated>2022-12-22T13:26:04-06:00</updated>
+            <summary>
+                <![CDATA[
+                    Sometimes I take my laptop away from my desk, but the connection to my bluetooth mouse is still strong enough&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Sometimes I take my laptop away from my desk, but the connection to my bluetooth mouse is still strong enough to stay connected. It will be just strong enough to prevent the trackpad from enabling, so I can't mouse up to the menu to turn off Bluetooth.</p>
+<p>Same problem in reverse when I get back to the desk and dock; the mouse won't connect because I disabled Bluetooth.</p>
+<p>Goal: a command-line way to enable or disable bluetooth.</p>
+<p>I found <code>blueutil</code>, here is how to use it.</p>
+<h3>Installation</h3>
+<p><code>brew install blueutil</code></p>
+<h3>Use</h3>
+<p>There is a command line flag <code>-p</code> for turning Bluetooth on/off with a <code>1 || 0</code>.</p>
+<p><code># Turn bluetooth off by passing a 0</code><br><code>blueutil -p 0</code><br><br><code># Turn bluetooth on by passing a 1</code><br><code>blueutil -p 1</code></p>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+</feed>
