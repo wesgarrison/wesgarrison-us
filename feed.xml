@@ -3,7 +3,7 @@
     <title>Wes Garrison</title>
     <link href="https://wesgarrison.github.io/wesgarrison-us/feed.xml" rel="self" />
     <link href="https://wesgarrison.github.io/wesgarrison-us" />
-    <updated>2022-12-22T13:44:55-06:00</updated>
+    <updated>2022-12-23T16:33:15-06:00</updated>
     <author>
         <name>Wes</name>
     </author>
@@ -58,6 +58,28 @@
 <p><code># Turn bluetooth off by passing a 0</code><br><code>blueutil -p 0</code><br><br><code># Turn bluetooth on by passing a 1</code><br><code>blueutil -p 1</code></p>
 <p> </p>
 <p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>mysql: size of all tables in database </title>
+        <author>
+            <name>Wes</name>
+        </author>
+        <link href="https://wesgarrison.github.io/wesgarrison-us/mysql-size-of-all-tables-in-database/"/>
+        <id>https://wesgarrison.github.io/wesgarrison-us/mysql-size-of-all-tables-in-database/</id>
+            <category term="mysql"/>
+
+        <updated>2022-12-23T16:33:15-06:00</updated>
+            <summary>
+                <![CDATA[
+                    Running out of space and need to figure out which tables are taking up all the disk? SELECT table_schema as&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Running out of space and need to figure out which tables are taking up all the disk?</p>
+<p><code class="language-sql">SELECT <br>     table_schema as `Database`, <br>     table_name AS `Table`, <br>     round(((data_length + index_length) / 1024 / 1024), 2) `Size in MB` <br>FROM information_schema.TABLES <br>ORDER BY (data_length + index_length) DESC;<br><br>## in gigs<br>SELECT <br>     table_schema as `Database`, <br>     table_name AS `Table`, <br>     round(((data_length + index_length) / 1024 / 1024 / 1024), 2) `Size in GB` <br>FROM information_schema.TABLES <br>ORDER BY (data_length + index_length) DESC;</code></p>
             ]]>
         </content>
     </entry>
