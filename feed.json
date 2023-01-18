@@ -10,6 +10,22 @@
     },
     "items": [
         {
+            "id": "https://wesgarrison.us/show-the-contents-of-a-git-stash/",
+            "url": "https://wesgarrison.us/show-the-contents-of-a-git-stash/",
+            "title": "show the contents of a git stash",
+            "summary": "I always have to look this up! When I am switching branches, sometimes I stash and then I can't&hellip;",
+            "content_html": "<p>I always have to look this up! When I am switching branches, sometimes I stash and then I can't recall what is in the stash.</p>\n<p><code>git stash list</code> shows all the stashes.</p>\n<p><code>git stash show</code> shows the files that were changed.</p>\n<p><code>git stash show -p</code> shows the <em>patch</em> with the changes.</p>\n<p><code>git stash show -p &lt;N&gt;</code> shows the Nth patch, shortcut for <code>stash@{N}</code></p>",
+            "author": {
+                "name": "Wes"
+            },
+            "tags": [
+                   "git",
+                   "TIL"
+            ],
+            "date_published": "2023-01-18T16:34:50-06:00",
+            "date_modified": "2023-01-18T16:34:50-06:00"
+        },
+        {
             "id": "https://wesgarrison.us/costco-photo-center-is-no-longer-some-prices-increase-243/",
             "url": "https://wesgarrison.us/costco-photo-center-is-no-longer-some-prices-increase-243/",
             "title": "Costco Photo Center is no longer, some prices increase 243%",
